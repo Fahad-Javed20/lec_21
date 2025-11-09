@@ -1,12 +1,13 @@
 
 import './App.css'
+import SimpleLoadingComponent from './components/SimpleLoadingComponent'
 
 function App() {
-  
+ 
 
   return (
     <>
-      <h1>Project is Ready</h1>
+      <SimpleLoadingComponent/>
     </>
   )
 }
