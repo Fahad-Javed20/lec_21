@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import type { UserType } from "../types/UserType";
 
-
-
 const SimpleLoadingComponent = () => {
   const [users, setUsers] = useState<UserType[]>([]);
 
@@ -12,19 +10,19 @@ const SimpleLoadingComponent = () => {
       .then((data) => setUsers(data.users));
   }, []);
 
-  return 
-  <div>
+  return(
+
+      <div>
     <h1>User List</h1>
     <ul>
-
-    {
-    users.map(user=>(
-        <li>{user.userName}</li>
-    ))
-    }
+      {users.map((user) => (
+          <li key={user.id}>
+          {user.userName} - {user.password}
+        </li>
+      ))}
     </ul>
-
-  </div>;
+  </div>
+    )
 };
 
 export default SimpleLoadingComponent;
