@@ -1,5 +1,5 @@
 export type UserType = {
     id:number;
-    userName:string;
+    username:string;
     password:string;
 }

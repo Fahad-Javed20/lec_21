@@ -1,14 +1,12 @@
-import './App.css'
-import SimpleLoadingComponent from './components/SimpleLoadingComponent'
+import "./App.css";
+import SimpleLoadingComponent from "./components/SimpleLoadingComponent";
 
 function App() {
- 
-
   return (
     <>
-<SimpleLoadingComponent />
+      <SimpleLoadingComponent />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
