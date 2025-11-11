@@ -51,7 +51,7 @@ const SimpleLoadingComponent = () => {
       <ul>
         {users.map((user) => (
           <li className="flex" key={user.id}>
-            <span className="font-bold">User Name: </span> {user.username}
+            <span className="font-bold ">User Name: </span> {user.username}
             <span className="font-bold">Password: </span> {user.password}
           </li>
         ))}
